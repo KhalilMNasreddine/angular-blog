@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'complete-blog-app';
+  selectedPost: any;
+
+  onPostSelected(post: any): void {
+    this.selectedPost = post;
+  }
 }
